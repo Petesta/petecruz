@@ -1,9 +1,14 @@
 Blog::Application.routes.draw do
-  get "cd/controllers"
-
   resources :posts
   resources :users
   resources :sessions
+
+  match '/login' => 'sessions#new', :as => 'login'
+  match '/logout' => 'sessions#destroy', :as => 'logout'
+
+  root :to => 'posts#index'
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

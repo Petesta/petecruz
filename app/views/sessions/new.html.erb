@@ -1,0 +1,11 @@
+<!-- form on sessions/new.html.erb ('new' action)
+this submits to the sessions controller (create action)
+no nested parameter hashes here 
+ex: params[:email], params[:password] -->
+<%= form_tag sessions_path do %>
+  <%= label_tag :email %>
+  <%= text_field_tag :email %>
+  <%= label_tag :password %>
+  <%= password_field_tag :password %>
+  <%= submit_tag "Log In" %>
+<% end %>

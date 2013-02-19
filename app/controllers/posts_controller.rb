@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_filter :must_be_signed_in, :except => [:index, :show]
+
   def new
     @post = Post.new
   end

@@ -1,0 +1,32 @@
+<!-- form that takes a email and password and posts that up to the sessions path (create in session controller)
+params -> {user: =>{ name:'sdf', emal" 'sfd', password: 'sdfs'}} -->
+
+<!-- building attr for the posts
+params[:post] -> hash of post attributes
+ex: params[:post][:title]
+post = Post.new(params[:post]) -> this is the same as in seeds.rb: ex User.new(full_name: "something", email: 'something else")
+if @post.save
+...
+else
+...
+end -->
+
+<!-- this submits to the posts controller (create action) -->
+
+<!-- <%= form_for @post do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_area :body %>
+  <%= f.submit %>
+<% end %> -->
+
+
+
+<!-- form on sessions/new.html.erb ('new' action)
+this submits to the sessions controller (create action)
+no nested parameter hashes here 
+ex: params[:email], params[:password] -->
+<%= form_tag sessions_path do %>
+  <%= text_field_tag :email %>
+  <%= password_field_tag :password %>
+  <%= submit_tag "Log In" %>
+<% end %>
