@@ -1,0 +1,17 @@
+form {
+  border: 1px solid #ccc;
+  width: 400px;
+  padding: 10px;
+  margin: 50px auto 0;
+
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+}
+
+@mixin border-box {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
