@@ -40,7 +40,7 @@ class PostsController < ApplicationController
 
     if @post.update.attributes(params[:id])
       flash[:success] = "Post successful!"
-      redirect_to posts_path
+      redirect_to @post
     else
       flash[:error] = "Something went wrong!"
       render :new
@@ -51,6 +51,7 @@ class PostsController < ApplicationController
 
   def destroy
     Post.find(params[:id]).destroy
+    flash[:success] = "Post deleted!"
     redirect_to posts_path
   end
 
