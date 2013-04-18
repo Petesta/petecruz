@@ -1,16 +1,17 @@
 <div class="banner">
   <center><h1 class="name">Pete Cruz's Blog</h1></center>
 </div>
-
+<div class="row">
 <div class="span-6 offset-5">
   <%= form_tag sessions_path do %>
     <%= label_tag :email %>
     <%= email_field_tag :email, '', autofocus: true, placeholder: 'Email' %>
 
-    <div id="hint"</div>
+    <div id="space"</div>
 
     <%= label_tag :password %>
     <%= password_field_tag :password, '', autofocus: true, placeholder: 'Password' %>
     <%= submit_tag "Log In", class: "btn btn-blue btn-medium" %>
   <% end %>
+</div>
 </div>

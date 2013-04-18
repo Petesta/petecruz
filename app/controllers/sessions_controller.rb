@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     user = User.find_by_email(params[:email])
     if user && user.authenticate(params[:password])
       cookies[:auth_token] = user.auth_token
-      redirect_to new_post_path
+      redirect_to posts_path
     else
       flash.now[:error] = "Invalid"
       render :new
