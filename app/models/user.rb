@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
   has_many :posts
   before_create :generate_auth_token
 
+  validates :full_name, :presence: true, length: {maximum: 40}
+
   private
     def generate_auth_token
       self.auth_token = SecureRandom.urlsafe_base64 
