@@ -6,13 +6,24 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
-<%= yield %>
-
-<% if signed_in? %>
-  <p> Signed in as <%= current_user.email %> </p>
-<% end %>
-
+  <% if signed_in? %>
+    <p> Signed in as <%= current_user.email %> </p>
+  <% end %>
+  
+  <header>
+    <div id="barHolder" class="slim">
+      <div class="bar">
+        <ul class="nav">
+          <a href="https://github.com/Petesta">Github</a>
+          <a href="http://www.linkedin.com/profile/view?id=210040746&trk=nav_responsive_tab_profile">LinkedIn</a>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <%= yield %>
 </body>
+
 </html>
