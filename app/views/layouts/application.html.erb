@@ -13,7 +13,7 @@
     <p> Signed in as <%= current_user.email %> </p>
   <% end %>
   
-  <header>
+  <header style="outline: 1px solid red">
     <div id="barHolder" class="slim">
       <div class="bar">
         <ul class="nav">
@@ -23,7 +23,9 @@
       </div>
     </div>
   </header>
-  <%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 
 </html>
