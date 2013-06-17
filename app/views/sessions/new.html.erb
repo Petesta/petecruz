@@ -1,17 +1,22 @@
 <div class="banner">
-  <center><h1 class="name">Pete Cruz's Blog</h1></center>
+  <center><div class="name", style="font-size: 2em">Pete Cruz's Blog</div></center>
 </div>
 <div class="row">
-<div class="span-7 offset-4">
+<div class="span-6.5 offset-5">
   <%= form_tag sessions_path do %>
-    <%= label_tag :email %>
-    <%= email_field_tag :email, '', autofocus: true, placeholder: 'Email' %>
 
-    <div id="space"</div>
+    <center><%= label_tag :email %>
+    <%= email_field_tag :email, '',  autofocus: true %>
+
+    <div id="email_space"></div>
 
     <%= label_tag :password %>
-    <%= password_field_tag :password, '', autofocus: true, placeholder: 'Password' %>
-    <%= submit_tag "Log In", class: "btn btn-blue btn-medium" %>
+    <%= password_field_tag :password, '', autofocus: true %>
+
+    <div id="pw_space"></div>
+
+    <%= submit_tag "Log In", class: "btn btn-blue btn-large" %>
+    </center>
   <% end %>
 </div>
 </div>
