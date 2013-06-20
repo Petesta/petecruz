@@ -1,3 +1,5 @@
+html, body { height: 100%; }
+
 header {
   background-color: black;
   margin-bottom: 15px;
@@ -9,8 +11,20 @@ header {
     margin-right: 15px;
     text-decoration: none;
   }
+}
 
+body {
+  padding-bottom: 60px;
+}
 
+.container {
+  min-height: 100%;
+  margin-bottom: -40px;
+
+  &:after {
+    content: "";
+    display: block;
+  }
 }
 
 footer {
@@ -21,3 +35,5 @@ footer {
   line-height: 40px;
   bottom: 0px;
 }
+
+footer, .container:after { height: 40px; }

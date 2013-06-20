@@ -3,7 +3,6 @@ class SessionsController < ApplicationController
     redirect_to posts_path if signed_in?
   end
 
-
   def create
     user = User.find_by_email(params[:email])
     if user && user.authenticate(params[:password])
@@ -15,11 +14,9 @@ class SessionsController < ApplicationController
     end
   end
 
-
   def destroy
     cookies.delete(:auth_token)
     redirect_to root_url
   end
-
 
 end
