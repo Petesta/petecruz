@@ -1,12 +1,20 @@
 html, body { height: 100%; }
 
 header {
+  height: 40px;
   background-color: black;
   margin-bottom: 15px;
   padding: 5px;
 
   .bar {
     padding: 15px 0 5px;
+  }
+
+  .bar p {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    display: inline;
   }
 
   .bar a {

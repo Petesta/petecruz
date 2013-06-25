@@ -9,15 +9,13 @@
 
 <body>
 
-  <% if signed_in? %>
-    <p> Signed in as <%= current_user.email %> </p>
-  <% end %>
   
   <header>
     <div id="barHolder" class="slim">
       <div class="bar">
         <div class="nav">
           <div class="span-8 offset-2"</div>
+            <p>Petesta</p>
             <a href="https://github.com/Petesta">Github</a>
             <a href="http://www.linkedin.com/profile/view?id=210040746&trk=nav_responsive_tab_profile">LinkedIn</a>
         </div>
@@ -28,6 +26,9 @@
   <div class="container">
     <%= yield %>
   </div>
+  <% if signed_in? %>
+    <p> Signed in as <%= current_user.email %> </p>
+  <% end %>
 
   <footer>
     Pete Cruz
