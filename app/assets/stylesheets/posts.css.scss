@@ -19,7 +19,17 @@ $gray-border: #ccc;
   word-wrap: break-word;
 
   .post-title {
-    border-color: black;
+    border-bottom: 1px solid $light-border;
+    padding: 10px 15px 0px;
+    text-align: center;
 
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 0;
+    }
+  }
+
+  .post-content {
+    text-align: center;
   }
 }
