@@ -1,12 +1,22 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$gray-border: #ccc;
+
+.post-container {
+  margin-left: 250px;
+  margin-right: 250px;
+}
 
 .post {
-  border-style: solid;
-  border-color: black;
+  @extend whitebox;
+  $light-border: lighten($gray-border, 2);
+  border: solid 1px $light-border;
+  font-size: 1.1em;
   line-height: 1.6;
   margin-bottom: 25px;
+  padding: 0;
+  word-wrap: break-word;
 
   .post-title {
     border-color: black;

@@ -15,15 +15,15 @@
       <div class="bar">
         <div class="nav">
           <div class="span-8 offset-2"</div>
-            <p><%= link_to "Petesta", "/" %></p>
-            <a href="https://github.com/Petesta">Github</a>
-            <a href="http://www.linkedin.com/profile/view?id=210040746&trk=nav_responsive_tab_profile">LinkedIn</a>
+            <p><%= link_to "Petesta", "/", id: "one" %></p>
+            <a class="link" href="https://github.com/Petesta">Github</a>
+            <a class="link" href="http://www.linkedin.com/profile/view?id=210040746&trk=nav_responsive_tab_profile">LinkedIn</a>
         </div>
       </div>
     </div>
   </header>
-  <%= render 'sidebar' %>
   <div class="container">
+  <%= render 'sidebar' %>
     <%= yield %>
   </div>
   <% if signed_in? %>

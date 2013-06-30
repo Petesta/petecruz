@@ -8,9 +8,11 @@ header {
 
   .bar {
     padding: 15px 0 5px;
+    margin-bottom: 10px;
   }
 
   .bar p {
+    font-size: 125%;
     color: white;
     margin-right: 20px;
     text-decoration: none;
@@ -22,6 +24,12 @@ header {
     font-size: 100%;
     margin-right: 15px;
     text-decoration: none;
+  }
+
+  .bar #one {}
+  
+  .bar a.line {
+       
   }
 }
 
