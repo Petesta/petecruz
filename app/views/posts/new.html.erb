@@ -1,9 +1,13 @@
 <%= form_for @post do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+  <div class="new-post-title">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
 
-  <%= f.label :body %>
-  <%= f.text_area :body %>
+  <div class="new-post-body">
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
 
-  <%= f.submit 'Save Post' %>
+  <div class="submit"><%= f.submit 'Save Post', class: "btn btn-blue btn-large"  %></div>
 <% end %>
