@@ -22,6 +22,7 @@ $gray-border: #ccc;
     border-bottom: 1px solid $light-border;
     padding: 10px 15px 0px;
     text-align: center;
+    color: #404040;
 
     h2 {
       font-size: 1.8em;
@@ -31,5 +32,6 @@ $gray-border: #ccc;
 
   .post-content {
     text-align: center;
+    color: #606060;
   }
 }
