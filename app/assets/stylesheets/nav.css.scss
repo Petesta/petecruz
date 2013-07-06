@@ -10,10 +10,6 @@ header {
     padding: 15px 0 5px;
     margin-bottom: 10px;
 
-    .span-8 {
-      height: 30px;
-    }
-
     p {
       font-size: 125%;
       color: white;
@@ -29,8 +25,8 @@ header {
       text-decoration: none;
 
       &:hover {
-        height: 5px;
-        border-radius: 2px;
+        padding: 5px;
+        border-radius: 3px;
         background-color: #404040;
         text-decoration: none;
       }
