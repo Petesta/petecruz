@@ -9,6 +9,10 @@ $gray-border: #ccc;
   background: red
 }
 
+#new-post {
+  margin-left: 648px;
+}
+
 .post {
   @extend whitebox;
   $light-border: lighten($gray-border, 2);
