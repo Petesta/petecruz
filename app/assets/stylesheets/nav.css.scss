@@ -1,7 +1,7 @@
 html, body { height: 100%; }
 
 header {
-  height: 45px;
+  height: 55px;
   background-color: black;
   margin-bottom: 15px;
   padding: 5px;
@@ -9,7 +9,8 @@ header {
   .bar {
     display: inline-block;
     padding: 15px 0 5px;
-    margin-bottom: 15px;
+
+    .nav { margin-bottom: 25px; }
 
     p {
       font-size: 135%;
@@ -38,6 +39,7 @@ header {
 }
 
 body {
+  background-color: #DCDCDC;
   padding-bottom: 60px;
 }
 
