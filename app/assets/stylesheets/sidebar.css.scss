@@ -1,17 +1,18 @@
 .sidebar {
   margin-left: 775px;
+
   h2 {
     border-bottom: 1px solid grey;
-    padding-bottom: 3px;
-    margin: 20px 0 10px;
     font-size: 20px;
     font-style: bold;
+    margin: 20px 0 10px;
+    padding-bottom: 3px;
     text-transform: uppercase;
   }
 
   p {
-    font-size: 15px;
     border-bottom: 1px solid grey;
+    font-size: 15px;
     padding-bottom: 5px;
   }
 }

@@ -6,8 +6,8 @@ $gray-border: #ccc;
 
 .post {
   @extend whitebox;
-  background-color: #F8F8F8;
   $light-border: lighten($gray-border, 2);
+  background-color: #F8F8F8;
   border: solid 1px black;
   font-size: 1.1em;
   line-height: 1.6;
@@ -17,9 +17,9 @@ $gray-border: #ccc;
 
   .post-title {
     border-bottom: 1px solid $light-border;
+    color: #404040;
     padding: 10px 15px 0px;
     text-align: center;
-    color: #404040;
 
     h2 {
       font-size: 1.8em;
@@ -36,6 +36,6 @@ $gray-border: #ccc;
 .new-post-title { margin-bottom: 10px; }
 
 .submit {
-  margin-top: 10px;
   margin-left: 325px;
+  margin-top: 10px;
 }

@@ -1,8 +1,8 @@
 html, body { height: 100%; }
 
 header {
-  height: 55px;
   background-color: black;
+  height: 55px;
   margin-bottom: 15px;
   padding: 5px;
 
@@ -13,11 +13,11 @@ header {
     .nav { margin-bottom: 25px; }
 
     p {
-      font-size: 135%;
       color: white;
+      display: inline;
+      font-size: 135%;
       margin-right: 20px;
       text-decoration: none;
-      display: inline;
     }
 
     a {
@@ -29,9 +29,9 @@ header {
       .link2 { margin-left: 10px; }
 
       &:hover {
-        cursor: pointer;
-        border-radius: 3px;
         background-color: #404040;
+        border-radius: 3px;
+        cursor: pointer;
         text-decoration: none;
       }
     }
@@ -44,8 +44,8 @@ body {
 }
 
 .container {
-  min-height: 100%;
   margin-bottom: -40px;
+  min-height: 100%;
 
   &:after {
     content: "";
@@ -54,12 +54,12 @@ body {
 }
 
 footer {
-  color: white;
   background-color: black;
+  bottom: 0px;
+  color: white;
+  line-height: 40px;
   margin-top: 15px;
   text-align: center;
-  line-height: 40px;
-  bottom: 0px;
 }
 
 footer, .container:after { height: 40px; }
