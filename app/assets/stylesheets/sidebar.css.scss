@@ -1,6 +1,22 @@
 .sidebar {
   margin-left: 775px;
 
+  .avatar {
+    border: 1px solid white;
+    border-radius: 45px;
+    box-shadow: 1px 1px 1px rgba(0,0,0, 0.7);
+    display: block;
+    height: 90px;
+    width: 90px;
+  }
+
+  .avatar img {
+      border: 5px solid rgba(0, 0, 0, 0.2);
+      border-radius: 45px;
+      width: 80px;
+      height: 80px;
+  }
+
   h2 {
     border-bottom: 1px solid grey;
     font-size: 20px;
