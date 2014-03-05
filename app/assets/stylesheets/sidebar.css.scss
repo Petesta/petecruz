@@ -3,11 +3,15 @@
 
   .avatar {
     border: 1px solid white;
-    border-radius: 45px;
-    box-shadow: 1px 1px 1px rgba(0,0,0, 0.7);
-    display: block;
     height: 90px;
     width: 90px;
+    display: block;
+    border-radius: 45px;
+    box-shadow: 1px 1px 1px rgba(0,0,0, 0.7);
+  }
+
+  .avatar {
+    background: rgba(0, 0, 0, 0.2);
   }
 
   .avatar img {
