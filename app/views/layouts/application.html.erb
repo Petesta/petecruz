@@ -23,15 +23,17 @@
     </div>
   </header>
   <div class="container">
-  <%= render 'posts/sidebar' %>
-    <%= yield %>
+    <div class="row">
+      <%= render 'posts/sidebar' %>
+      <%= yield %>
+    </div>
   </div>
   <% if signed_in? %>
     <p> Signed in as <%= current_user.email %> </p>
   <% end %>
 
   <footer>
-    Pete Cruz
+  <a class="twitter-link" href="https://twitter.com/iPetesta">@iPetesta</a>
   </footer>
 </body>
 

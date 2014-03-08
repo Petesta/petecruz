@@ -9,17 +9,25 @@ $gray-border: #ccc;
   $light-border: lighten($gray-border, 2);
   background-color: #F8F8F8;
   border: solid 1px black;
-  font-size: 1.1em;
+  border-radius: 15px;
+  font-size: 1.3em;
   line-height: 1.6;
   margin-bottom: 25px;
   padding: 0;
   word-wrap: break-word;
 
+  .post-date {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+
+
   .post-title {
     border-bottom: 1px solid $light-border;
     color: #404040;
-    padding: 10px 15px 0px;
-    text-align: center;
+    padding: 2px 15px 0px;
+    text-align: left;
 
     h2 {
       font-size: 1.8em;
@@ -28,8 +36,11 @@ $gray-border: #ccc;
   }
 
   .post-content {
-    text-align: center;
     color: #606060;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 8px
   }
 }
 

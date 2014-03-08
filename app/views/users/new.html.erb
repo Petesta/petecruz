@@ -1,2 +1,13 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<%= form_for(@user, :html => { :style => 'background: none;', :style => 'border: none;' }) do |f| %>
+  <%= f.label :full_name, "Full Name" %>
+  <%= f.text_field :full_name, autofocus: true  %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+  <div id="hint"></div>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <%= submit_tag "Sign Up", class: "btn btn-large btn-blue btn-mobile-block" %>
+<% end %>

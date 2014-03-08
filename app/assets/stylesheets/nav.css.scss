@@ -39,7 +39,7 @@ header {
 }
 
 body {
-  background-color: #DCDCDC;
+  background-color: #F0F0F0;
   padding-bottom: 60px;
 }
 
@@ -60,6 +60,11 @@ footer {
   line-height: 40px;
   margin-top: 15px;
   text-align: center;
+
+  a {
+    color: #119EE7;
+    text-decoration: none;
+  }
 }
 
 footer, .container:after { height: 40px; }
