@@ -1,8 +1,10 @@
 $gray-border: #ccc;
 
-.posts-container { border-color: blue; }
+.posts-container {
+  border-color: blue;
 
-#new-post { margin-left: 648px; }
+  a { float: right; }
+}
 
 .post {
   @extend whitebox;
@@ -46,7 +48,6 @@ $gray-border: #ccc;
 
 .new-post-title { margin-bottom: 10px; }
 
-.submit {
-  margin-left: 325px;
-  margin-top: 10px;
-}
+.new-post-body {}
+
+.submit { margin-top: 10px; }

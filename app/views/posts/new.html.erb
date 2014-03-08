@@ -1,13 +1,15 @@
-<%= form_for(@post, :html => { :style => 'background: none;', :style => 'border: none;' }) do |f| %>
-  <div class="new-post-title">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
+<div class="span-10 offset-1">
+  <%= form_for(@post, :html => { :style => 'background: none;', :style => 'border: none;' }) do |f| %>
+    <div class="new-post-title">
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
 
-  <div class="new-post-body">
-    <%= f.label :body %>
-    <%= f.text_area :body %>
-  </div>
+    <div class="new-post-body">
+      <%= f.label :body %>
+      <%= f.text_area :body %>
+    </div>
 
-  <div class="submit"><%= f.submit 'Save Post', class: "btn btn-blue btn-large"  %></div>
-<% end %>
+    <div class="submit"><%= f.submit 'Save Post', class: "btn btn-blue btn-large"  %></div>
+  <% end %>
+</div>
