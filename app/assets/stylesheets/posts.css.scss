@@ -1,10 +1,6 @@
 $gray-border: #ccc;
 
-.posts-container {
-  border-color: blue;
-
-  a { float: right; }
-}
+.posts-container { border-color: blue; }
 
 .post {
   @extend whitebox;

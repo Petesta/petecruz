@@ -8,6 +8,15 @@
 
 User.create(email: "admin@admin.com", full_name: "admin", password: "admin", password_confirmation: "admin")
 
-Post.create(body:"Chef stuff", title: "Chef", user_id: 1)
-Post.create(body:"Rails stuff", title: "Rails", user_id: 1)
 Post.create(body:"Scala stuff", title: "Scala", user_id: 1)
+Post.create(body:"Haskell stuff", title: "Haskell", user_id: 1)
+Post.create(body:"Ruby stuff", title: "Ruby", user_id: 1)
+Post.create(body:"Rails stuff", title: "Rails", user_id: 1)
+Post.create(body:"Chef stuff", title: "Chef", user_id: 1)
+Post.create(body:"Linux stuff", title: "Linux", user_id: 1)
+Post.create(body:"AWS stuff", title: "AWS", user_id: 1)
+Post.create(body:"Vim stuff", title: "Vim", user_id: 1)
+Post.create(body:"Scalaz stuff", title: "Scalaz", user_id: 1)
+Post.create(body:"PostreSQL stuff", title: "PostgreSQL", user_id: 1)
+Post.create(body:"Cassandra stuff", title: "Cassandra", user_id: 1)
+Post.create(body:"Real-time stuff", title: "Real-time", user_id: 1)
