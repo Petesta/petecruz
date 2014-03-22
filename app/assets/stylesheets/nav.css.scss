@@ -2,10 +2,13 @@ html, body { height: 100%; }
 
 header {
   background: url('/assets/jumbotron.png');
-  background-color: black;
   height: 55px;
   margin-bottom: 40px;
   padding: 5px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 
   .slim {
     text-align: left;
@@ -49,6 +52,7 @@ body {
 }
 
 .container {
+  margin-top: 95px;
   margin-bottom: -40px;
   min-height: 100%;
 
@@ -59,7 +63,7 @@ body {
 }
 
 footer {
-  background-color: black;
+  background: url('/assets/jumbotron.png');
   bottom: 0px;
   color: white;
   line-height: 40px;
