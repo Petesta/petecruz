@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts = Post.paginate(:page => params[:page], :per_page => 5).order('id DESC')
+    @posts = Post.paginate(:page => params[:page], :per_page => 3).order('id DESC')
   end
 
   def create
