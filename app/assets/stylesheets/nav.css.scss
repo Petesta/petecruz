@@ -22,7 +22,7 @@ header {
       p {
         color: white;
         display: inline;
-        font-size: 135%;
+        font-size: 155%;
         margin-right: 20px;
         text-decoration: none;
       }
@@ -53,7 +53,6 @@ body {
 
 .container {
   margin-top: 95px;
-  margin-bottom: -40px;
   min-height: 100%;
 
   &:after {
@@ -66,7 +65,7 @@ footer {
   background: url('/assets/jumbotron.png');
   bottom: 0px;
   line-height: 40px;
-  margin-top: 110px;
+  margin-top: 55px;
   text-align: center;
 
   a {

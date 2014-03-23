@@ -1,6 +1,22 @@
 $gray-border: #ccc;
+$med-gray: #ccc;
+$radius: 3px;
 
-.posts-container { border-color: blue; }
+.posts-container {
+  border-color: blue;
+
+  .pagination {
+    text-align: center;
+   
+    a, em, span { border: 1px solid #8c8c8c; border-radius: 15px; padding: 10px 12px; }
+
+    a {
+      color: red;
+      .previous_page { color: red; }
+      .next_page { color: red; }
+    }
+  }
+}
 
 .post {
   @extend whitebox;
