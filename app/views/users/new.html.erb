@@ -9,5 +9,13 @@
   <%= f.label :password %>
   <%= f.password_field :password %>
 
+  <%= f.label :permissions %>
+  <%= f.select(:permissions, options_for_select([
+    ['Administrator', 0],
+    ['Developer', 1],
+    ['Author', 2]
+  ], 0))
+  %>
+
   <%= submit_tag "Sign Up", class: "btn btn-large btn-blue btn-mobile-block" %>
 <% end %>

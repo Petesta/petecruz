@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   def new
     @user = User.new
   end
@@ -11,6 +12,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
 
     if @user.save
+      login_user(@user)
       flash[:success] = "Successful"
       redirect_to posts_path
     else

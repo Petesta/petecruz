@@ -9,12 +9,11 @@ $radius: 3px;
     margin-top: 25px;
     text-align: center;
    
-    a, em, span { border: 1px solid #8c8c8c; border-radius: 15px; padding: 10px 12px; }
-
-    a {
-      color: red;
-      .previous_page { color: red; }
-      .next_page { color: red; }
+    a, em, span {
+      border: 1px solid #8c8c8c;
+      border-radius: 15px; 
+      color: #119EE7;
+      padding: 10px 12px;
     }
   }
 }
