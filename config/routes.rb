@@ -1,7 +1,7 @@
 Blog::Application.routes.draw do
   resources :posts
-  resources :users
   resources :sessions
+  resources :users
 
   match '/login' => 'sessions#new', :as => 'login'
   match '/logout' => 'sessions#destroy', :as => 'logout'
