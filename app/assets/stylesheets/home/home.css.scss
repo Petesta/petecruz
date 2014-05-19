@@ -1,0 +1,66 @@
+.intro-container {
+  background: url('/assets/jumbotron.png');
+  color: white;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding: 140px;
+  text-align: center;
+
+  h1 {
+    font-size: 325%;
+    font-weight: bold;
+  }
+
+  p { 
+    font-size: 115%;
+    font-weight: lighter;
+  }
+}
+
+.social {
+  background: #E8E8E8;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  height: 80px;
+  text-align: center;
+
+  .social-container {
+    display: inline-block;
+    height: 80px;
+    width: 475px;
+    
+    .social-links {
+      display: inline-block;
+      height: 80px;
+      padding-top: 56px;
+
+      .linkedin {
+        border-bottom: 3px solid #76afd0;
+        display: block;
+        float: left;
+        margin: 3px;
+        width: 150px;
+      }
+
+      .github {
+        border-bottom: 3px solid #be594e;
+        display: block;
+        float: left;
+        margin: 3px;
+        width: 150px;
+      }
+
+      .twitter {
+        border-bottom: 3px solid #90a967;
+        display: block;
+        float: left;
+        margin: 3px;
+        width: 150px;
+      }
+    }
+
+    a {
+      color: #666;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
