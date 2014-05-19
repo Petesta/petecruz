@@ -2,22 +2,20 @@ html, body { height: 100%; }
 
 header {
   background: url('/assets/jumbotron.png');
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   height: 55px;
   left: 0;
-  margin-bottom: 40px;
   padding: 5px;
   position: fixed;
   right: 0;
   top: 0;
 
   .slim {
-    text-align: left;
+    text-align: center;
 
     .bar {
       display: inline-block;
       padding: 15px 0 5px;
-
-      .nav { margin-bottom: 25px; }
 
       p {
         color: white;
@@ -56,6 +54,29 @@ body {
     content: "";
     display: block;
   }
+}
+
+.intro-container {
+  background: url('/assets/jumbotron.png');
+  color: white;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding: 140px;
+  text-align: center;
+
+  h1 {
+    font-size: 325%;
+    font-weight: bold;
+  }
+
+  p { 
+    font-size: 115%;
+    font-weight: lighter;
+  }
+}
+
+.social {
+  background: #E8E8E8;
+  padding: 50px;
 }
 
 footer {

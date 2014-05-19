@@ -1,14 +1,14 @@
 class User < ActiveRecord::Base
   #Password and Password_confirmation are just virtual attributes
-  attr_accessible :email, :full_name, :password, :password_confirmation, :permissions
-  has_secure_password
   has_many :posts
-  before_create :generate_auth_token
+  has_secure_password
 
-  validates :full_name, presence: true, length: {maximum: 40}
+  before_create :generate_auth_token
+  attr_accessible :email, :full_name, :password, :password_confirmation, :permissions
+
+  validates :full_name, presence: true, length: { maximum: 40 }
   validates :email, presence: true,
                     uniqueness: { case_sensitive: false }
-
 
   def is_admin?
     permissions == 0
@@ -31,9 +31,9 @@ class User < ActiveRecord::Base
   end
 
   private
-    def generate_auth_token
-      self.auth_token = SecureRandom.urlsafe_base64 
-    end
 
+  def generate_auth_token
+    self.auth_token = SecureRandom.urlsafe_base64 
+  end
 
 end
