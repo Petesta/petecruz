@@ -2,17 +2,36 @@
   background: url('/assets/jumbotron.png');
   color: white;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  padding: 140px;
+  padding: 70px 0;
+  position: relative;
   text-align: center;
 
-  h1 {
-    font-size: 325%;
-    font-weight: bold;
-  }
+  .intro-description {
+    h1 {
+      font-size: 400%;
+      font-weight: bold;
+    }
 
-  p { 
-    font-size: 115%;
-    font-weight: lighter;
+    p { 
+      font-size: 125%;
+      font-weight: lighter;
+      margin-bottom: 60px;
+    }
+
+    .resume {
+      .btn-custom {
+        background: #76afd0;
+        border: #76afd0;
+        color: white;
+        font-size: 140%;
+        height: 40px;
+        left: 250px;
+        text-shadow: none;
+        width: 160px;
+
+        i { margin-top: 10px; }
+      }
+    }
   }
 }
 
@@ -30,37 +49,43 @@
     
     .social-links {
       display: inline-block;
-      height: 80px;
+      height: 24px;
       padding-top: 59px;
 
       .linkedin {
         border-bottom: 3px solid #76afd0;
         display: block;
         float: left;
-        margin: 3px;
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-top: 3px;
         width: 150px;
 
-        &:hover { border-bottom: 3px solid #D8D8D8; }
+        &:hover { border-bottom: 3px solid #D8D8D8; cursor: pointer; }
       }
 
       .github {
         border-bottom: 3px solid #be594e;
         display: block;
         float: left;
-        margin: 3px;
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-top: 3px;
         width: 150px;
         
-        &:hover { border-bottom: 3px solid #D8D8D8; }
+        &:hover { border-bottom: 3px solid #D8D8D8; cursor: pointer; }
       }
 
       .twitter {
         border-bottom: 3px solid #90a967;
         display: block;
         float: left;
-        margin: 3px;
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-top: 3px;
         width: 150px;
 
-        &:hover { border-bottom: 3px solid #D8D8D8; }
+        &:hover { border-bottom: 3px solid #D8D8D8; cursor: pointer; }
       }
     }
 

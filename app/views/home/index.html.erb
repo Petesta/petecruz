@@ -1,8 +1,22 @@
 <section class="intro-container">
-  <h1> Hey, I'm Pete! </h1>
-  <p> I love functional programming with interests in devops
-      and web backends.
-  </p>
+  <div class="intro-description">
+    <h1> Hey, I'm Pete! </h1>
+    <p> I love functional programming with interests in devops
+        and web backends.
+    </p>
+
+    <div class="resume">
+      <%= link_to "posts#index", class: "btn btn-primary btn-custom btn-blog" do %>
+        <i class="fa fa-list-ul"></i>
+        Blog
+      <% end %>
+
+      <a class="btn btn-primary btn-custom btn-resume" href="/PeteCruz_Resume.pdf" target="_blank">
+        <i class="fa fa-file"></i>
+        Resume
+      </a>
+    </div> <!--resume-->
+  </div> <!--intro-container-->
 </section>
 
 <div class="social">
