@@ -2,22 +2,20 @@ html, body { height: 100%; }
 
 header {
   background: url('/assets/jumbotron.png');
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   height: 55px;
   left: 0;
-  margin-bottom: 40px;
   padding: 5px;
   position: fixed;
   right: 0;
   top: 0;
 
   .slim {
-    text-align: left;
+    text-align: center;
 
     .bar {
       display: inline-block;
       padding: 15px 0 5px;
-
-      .nav { margin-bottom: 25px; }
 
       p {
         color: white;
