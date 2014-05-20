@@ -29,6 +29,8 @@
         text-shadow: none;
         width: 160px;
 
+        &:hover { background: #90a967; }
+
         i { margin-top: 10px; }
 
         .btn-blog {
@@ -115,8 +117,34 @@
     color: #404040;
     font-size: 15px;
     margin: 10px auto 0;
-    width: 350px;
+    overflow: auto;
+    width: 750px;
 
     .icon { margin: 0 auto 30px; }
+
+    .language-info {
+      display: inline-block;
+      width: 350px;
+    }
+
+    .generic-info-container {
+      display: inline-block;
+      overflow: auto;
+
+      .generic-info {
+        float: left;
+        margin: 0 auto;
+        width: 200px;
+
+        a {
+          text-decoration: none;
+          
+          &:hover { text-decoration: underline; }
+        }
+
+        a#one { color: #90a967; }
+        a#two { color: #d8a443; }
+      }
+    }
   }
 }
