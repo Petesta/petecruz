@@ -137,13 +137,16 @@
         width: 200px;
 
         a {
+          //color: #be594e;
           text-decoration: none;
           
           &:hover { text-decoration: underline; }
         }
 
-        a#one { color: #90a967; }
-        a#two { color: #d8a443; }
+
+          #argonaut { color: #be594e; }
+          #geocodr { color: #90a967; }
+          #ringbase { color: #d8a443; }
       }
     }
   }
