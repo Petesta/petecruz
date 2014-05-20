@@ -30,6 +30,10 @@
         width: 160px;
 
         i { margin-top: 10px; }
+
+        .btn-blog {}
+
+        .btn-resume {}
       }
     }
   }
@@ -39,60 +43,49 @@
   background: #E8E8E8;
   border-bottom: 3px solid #D8D8D8;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  height: 80px;
+  //height: 80px;
   text-align: center;
 
   .social-container {
-    display: inline-block;
-    height: 80px;
-    width: 475px;
-    
+
     .social-links {
-      display: inline-block;
-      height: 24px;
-      padding-top: 59px;
+      margin: 0 auto;
+      margin-bottom: -3px;
+      overflow: auto;
+      text-align: center;
+      width: 50%;
+
+      .social-link {
+        //inline = text, block = div elements position
+        display: inline-block;
+        margin-left: 3px;
+        margin-right: 3px;
+
+        a {
+          color: #666;
+          display: block;
+          padding-top: 60px;
+          text-align: center;
+          text-decoration: none;
+          width: 150px;
+        }
+      }
 
       .linkedin {
         border-bottom: 3px solid #76afd0;
-        display: block;
-        float: left;
-        margin-left: 3px;
-        margin-right: 3px;
-        margin-top: 3px;
-        width: 150px;
-
         &:hover { border-bottom: 3px solid #D8D8D8; cursor: pointer; }
       }
 
       .github {
         border-bottom: 3px solid #be594e;
-        display: block;
-        float: left;
-        margin-left: 3px;
-        margin-right: 3px;
-        margin-top: 3px;
-        width: 150px;
-        
         &:hover { border-bottom: 3px solid #D8D8D8; cursor: pointer; }
       }
 
       .twitter {
         border-bottom: 3px solid #90a967;
-        display: block;
-        float: left;
-        margin-left: 3px;
-        margin-right: 3px;
-        margin-top: 3px;
-        width: 150px;
-
         &:hover { border-bottom: 3px solid #D8D8D8; cursor: pointer; }
       }
     }
 
-    a {
-      color: #666;
-      text-align: center;
-      text-decoration: none;
-    }
   }
 }

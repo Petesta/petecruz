@@ -1,3 +1,3 @@
 # Petesta's Blog
 
-Building a blog! Also an exercise for playing with and understanding a lot more about Rails.
+The source code for my personal blog. Blog written in Rails and hosted on Heroku.
