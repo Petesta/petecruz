@@ -19,7 +19,10 @@
   <% end %>
 
   <%= yield %>
-  <div class="container"></div>
+
+  <% if controller.controller_name != "home" %>
+    <div class="container"></div>
+  <% end %>
 
   <% if signed_in? %>
     <p> Signed in as <%= current_user.email %> </p>
