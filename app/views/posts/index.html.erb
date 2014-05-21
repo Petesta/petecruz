@@ -1,22 +1,29 @@
-<div class="row">
-  <%= render 'posts/sidebar' %>
-  <div class="span-10 offset-1 posts-container">
-    <% @posts.each do |post| %>
-      <div class="post">
-        <p class="post-date"><%= Date.today.to_formatted_s(:long) %></p>
-        <div class="post-title">
-          <h2><%= post.title %></h2>
-        </div>
-        <div class="post-content">
-          <%= post.body %>
-        </div> <!--post-content-->
-      </div> <!--post-->
-    <% end %>
+<div class="container">
+  <div class="row">
+    <%= render 'posts/sidebar' %>
 
-    <%= will_paginate @posts %>
+    <div class="span-10 offset-1 posts-container">
+      <% @posts.each do |post| %>
+        <div class="post">
+          <div class="post-title">
+            <h2><%= post.title %></h2>
+          </div>
 
-    <% if signed_in? %>
-      <%= link_to "Create new post", new_post_path, {class: "btn btn-blue", id: "new-post"} %>
-    <% end %>
-  </div>
-</div>
+          <p class="post-date"><%= render_time(post.created_at) %></p>
+
+          <div class="post-body">
+            <%= post.body %>
+          </div>
+
+          <hr>
+        </div> <!--post-->
+      <% end %>
+
+      <%= will_paginate @posts, :outer_window => 1 %>
+
+      <% if signed_in? %>
+        <%= link_to "Create new post", new_post_path, {class: "btn btn-blue", id: "new-post"} %>
+      <% end %>
+    </div>
+  </div> <!--row-->
+</div> <!--container-->

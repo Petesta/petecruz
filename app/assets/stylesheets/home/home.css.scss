@@ -13,7 +13,8 @@
     }
 
     p { 
-      font-size: 125%;
+      font-size: 100%;
+      font-family: "Verdana", Geneva, sans-serif;
       font-weight: lighter;
       margin-bottom: 60px;
     }
@@ -108,46 +109,42 @@
 
   h1 {
     color: #484848;
+    font-family: "Verdana", Geneva, sans-serif;
     font-size: 40px;
     font-weight: 100;
     margin: 60px 0 10px;
   }
 
-  //.icons {
-   // color: #404040;
-   // display: inline-block;
-   // font-size: 15px;
-   // margin: 10px auto 0;
-   // overflow: auto;
-   // width: 750px;
+  p { font-family: "Verdana", Geneva, sans-serif; }
 
-    .icon { color: #404040; display: inherit; margin: 15px auto 20px; }
+  .icon { color: #404040; display: inherit; margin: 15px auto 20px; }
 
-    .language-info {
-      display: inline-block;
-      width: 350px;
-    }
+  .language-info {
+    display: inline-block;
+    font-family: "Verdana", Geneva, sans-serif;
+    width: 350px;
+  }
 
-    .generic-info-container {
-      color: #686868;
-      display: inline-block;
-      font-size: 15px;
-      overflow: auto;
+  .generic-info-container {
+    color: #686868;
+    display: inline-block;
+    font-size: 15px;
+    overflow: auto;
 
-      .generic-info {
-        float: left;
-        margin: 0 auto;
-        width: 200px;
+    .generic-info {
+      float: left;
+      font-family: "Verdana", Geneva, sans-serif;
+      margin: 0 auto;
+      width: 200px;
 
-        a {
-          text-decoration: none;
-          &:hover { text-decoration: underline; }
-        }
-
-        #argonaut { color: #be594e; }
-        #geocodr  { color: #90a967; }
-        #ringbase { color: #d8a443; }
+      a {
+        text-decoration: none;
+        &:hover { font-weight: bold; }
       }
+
+      #argonaut { color: #be594e; }
+      #geocodr  { color: #90a967; }
+      #ringbase { color: #d8a443; }
     }
-  //}
+  }
 }

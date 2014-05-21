@@ -3,48 +3,41 @@ html, body { height: 100%; }
 header {
   background: url('/assets/jumbotron.png');
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  height: 55px;
   left: 0;
+  overflow: auto;
   padding: 5px;
   position: fixed;
   right: 0;
   top: 0;
 
-  .header-bar {
+  .btn-home {
+    background: #76afd0;
+    border: #76afd0;
+    color: #FFFFFF;
+    float: left;
+    height: 11px;
+    margin: 12px 0 7px 15px;
+    position: relative;
+    text-shadow: none;
+    
+    &:hover { background: #90a967; color: #FFFFFF; }
+  }
+
+  .header-info {
+    color: #76afd0;
+    font-size: 155%;
+    font-weight: bold;
+    padding-top: 8px;
     text-align: center;
-
-    p {
-      color: white;
-      display: inline;
-      font-size: 155%;
-      margin-right: 20px;
-      text-decoration: none;
-    }
-
-    .back-icon {
-      color: white;
-      float: left;
-      left: 6px;
-      padding-top: 6px;
-      position: relative;
-      text-decoration: none;
-
-      &:hover { color: #90a967; }
-    }
-
-    .banner { padding-top: 12px; }
   }
 }
 
 body {
-  background-color: #F0F0F0;
+  background-color: #F8F8F8;
   padding-bottom: 60px;
 }
 
 .container {
-  margin-top: 95px;
-  min-height: 100%;
-
   &:after {
     content: "";
     display: block;
@@ -64,4 +57,4 @@ footer {
   }
 }
 
-footer, .container:after { height: 40px; }
+footer { height: 40px; }

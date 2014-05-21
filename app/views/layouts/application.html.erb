@@ -10,10 +10,13 @@
 <body>
   <% if controller.controller_name != "home" %>
     <header>
-      <div class="header-bar">
-        <%= link_to "", "/", class: "back-icon fa fa-arrow-circle-o-left fa-3x" %>
-        <div class="banner">
-          <p> Blog :: Petesta -> [Posts] </p>
+      <%= link_to "Home", "/", class: "btn btn-primary btn-home" %>
+
+      <div class="container">
+        <div class="row">
+          <div class="header-info span-16">
+            <p> Blog : : Petesta -> [ Posts ] </p>
+          </div>
         </div>
       </div>
     </header>
@@ -21,15 +24,10 @@
 
   <%= yield %>
 
-  <% if controller.controller_name != "home" %>
-    <div class="container"></div>
-  <% end %>
-
   <% if signed_in? %>
     <p> Signed in as <%= current_user.email %> </p>
   <% end %>
 
-  <footer>
-  </footer>
+  <footer></footer>
 </body>
 </html>
