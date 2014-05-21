@@ -9,7 +9,6 @@
 /tmp
 
 # Ignore pdf
-/public/*.pdf
 
 #Ignore all .swp files from Vim
 .*.swp

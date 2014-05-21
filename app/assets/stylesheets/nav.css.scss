@@ -10,34 +10,29 @@ header {
   right: 0;
   top: 0;
 
-  .slim {
+  .header-bar {
     text-align: center;
 
-    .bar {
-      display: inline-block;
-      padding: 15px 0 5px;
-
-      p {
-        color: white;
-        display: inline;
-        font-size: 155%;
-        margin-right: 20px;
-        text-decoration: none;
-      }
-
-      a {
-        color: white;
-        font-size: 100%;
-        padding: 7px 4px;
-        text-decoration: none;
-        
-
-        &:hover {
-          cursor: pointer;
-          text-decoration: none;
-        }
-      }
+    p {
+      color: white;
+      display: inline;
+      font-size: 155%;
+      margin-right: 20px;
+      text-decoration: none;
     }
+
+    .back-icon {
+      color: white;
+      float: left;
+      left: 6px;
+      padding-top: 6px;
+      position: relative;
+      text-decoration: none;
+
+      &:hover { color: #90a967; }
+    }
+
+    .banner { padding-top: 12px; }
   }
 }
 
