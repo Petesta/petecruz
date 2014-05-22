@@ -37,7 +37,9 @@ body {
   padding-bottom: 60px;
 }
 
-.container {
+.page-wrap {
+  min-height: 100%;
+
   &:after {
     content: "";
     display: block;
@@ -48,7 +50,7 @@ footer {
   background: url('/assets/jumbotron.png');
   bottom: 0px;
   line-height: 40px;
-  margin-top: 55px;
+  margin-top: 35px;
   text-align: center;
 
   a {
@@ -57,4 +59,4 @@ footer {
   }
 }
 
-footer { height: 40px; }
+footer, .page-wrap:after { height: 40px; }

@@ -18,11 +18,13 @@
             <p> Blog : : Petesta -> [ Posts ] </p>
           </div>
         </div>
-      </div>
+      </div> <!--container-->
     </header>
   <% end %>
 
-  <%= yield %>
+  <div class="page-wrap">
+    <%= yield %>
+  </div>
 
   <% if signed_in? %>
     <p> Signed in as <%= current_user.email %> </p>
